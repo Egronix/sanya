@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Саня Демиденко – Официальный Фан-сайт</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f5;
+            color: #333;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ff6b6b;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        #navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #navbar a:hover {
+            background-color: #ff8e8e;
+        }
+        section {
+            min-height: 100vh;
+            padding: 80px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ff4757;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #ff6b6b;
+            border-bottom: 2px dashed #ff6b6b;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .content-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .monkey-img {
+            width: 200px;
+            border-radius: 50%;
+            margin: 15px;
+            border: 5px solid #ff6b6b;
+            transition: transform 0.3s;
+        }
+        .monkey-img:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+        .tg-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #0088cc, #00aced);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tg-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ff6b6b;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid #ff6b6b;
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+            text-align: right;
+        }
+        .right {
+            left: 50%;
+            text-align: left;
+        }
+        .left::after {
+            right: -12px;
+        }
+        .right::after {
+            left: -12px;
+        }
+        .achievement {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#home">Главная</a>
+        <a href="#childhood">Детство</a>
+        <a href="#school">Школа</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <section id="home">
+        <h1>Саня Демиденко</h1>
+        <p style="font-size: 1.5em; color: #ff4757;">Человек. Легенда. Обезьяний король.</p>
+        
+        <div class="content-box">
+            <h2>🔥 Главные факты 🔥</h2>
+            <p>• Саня родился с золотой ложкой во рту, но предпочёл её продать, чтобы купить бананы для своих подопытных обезьян.</p>
+            <p>• Его IQ невозможно измерить, потому что все тесты ломаются при попытке оценить его гениальность.</p>
+            <p>• В свободное время Саня участвует в гонках на черепахах и всегда побеждает, потому что черепахи боятся его взгляда.</p>
+        </div>
+        
+        <!-- 🚨 ЗАМЕНИТЬ НА СВОЮ КАРТИНКУ -->
+        <img src="https://i.postimg.cc/HntGg6s8/image.jpg" alt="Фото Сани" class="monkey-img">
+        <img src="https://i.postimg.cc/jjWLS7fS/3.jpg" alt="Ещё фото" class="monkey-img">
+        
+        <!-- 🚨 ЗАМЕНИТЬ ССЫЛКУ НА БОТА -->
+        <a href="http://t.me/SanechkinKentik_bot" class="tg-button">💬 Написать Сане в Telegram</a>
+    </section>
+
+    <section id="childhood" style="background-color: #f0f8ff;">
+        <h1>Детство Сани</h1>
+        
+        <div class="content-box">
+            <h2>🐣 Ранние годы</h2>
+            <p>Саня появился на свет в небольшой деревне, где сразу же проявил свои необычные способности. По легенде, он:</p>
+            <ul>
+                <li>Научился ходить в 3 месяца, чтобы догнать сбежавшего цыплёнка.</li>
+                <li>В 2 года решил свою первую математическую задачу (как разделить один банан на трёх обезьян).</li>
+                <li>В 5 лет построил ракету из картона, которая "почти" взлетела.</li>
+            </ul>
+            
+            <h2>🐒 Первая встреча с обезьянами</h2>
+            <p>В 6 лет Саня впервые посетил зоопарк. Когда он подошёл к вольеру с обезьянами, произошло невероятное:</p>
+            <p><em>"Все обезьяны встали и начали аплодировать. С тех пор Саня считает их своими духовными наставниками."</em></p>
+        </div>
+        
+        <!-- 🚨 ЗАМЕНИТЬ НА СВОЮ КАРТИНКУ -->
+        <img src="https://i.postimg.cc/jjWLS7fS/3.jpg" alt="Саня в детстве" class="monkey-img">
+    </section>
+
+    <section id="school">
+        <h1>Школьные годы</h1>
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content-box">
+                    <h3>1 класс</h3>
+                    <p>Саня перехитрил учительницу, убедив её, что 2+2=5 "в альтернативной математике".</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content-box">
+                    <h3>5 класс</h3>
+                    <p>Попытался организовать школьный переворот, чтобы в столовой подавали только бананы. Потерпел неудачу, но получил прозвище "Банановый король".</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content-box">
+                    <h3>8 класс</h3>
+                    <p>Создал секретный клуб "Обезьянья лига", куда принимал только тех, кто мог пройти испытание бананом.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content-box">
+                    <h3>11 класс</h3>
+                    <p>На выпускном устроил флешмоб, где весь класс изображал обезьян. Директор до сих пор вспоминает это со смешанными чувствами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" style="background-color: #f0f8ff;">
+        <h1>Великие достижения</h1>
+        
+        <div class="content-box">
+            <div class="achievement">
+                <h3>🏆 Нобелевская премия по банановедению (2015)</h3>
+                <p>Удостоен за революционное исследование "Как очистить банан за 0.5 секунды".</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>🐵 Обезьяний орден почёта (2018)</h3>
+                <p>Награда вручена лидером стаи макак за "неоценимый вклад в развитие обезьяньего движения".</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>🚀 Запуск спутника "Банан-1" (2020)</h3>
+                <p>Первый в мире космический аппарат, работающий на банановой кожуре.</p>
+            </div>
+        </div>
+        
+        <!-- 🚨 ЗАМЕНИТЬ НА СВОИ КАРТИНКИ -->
+        <img src="https://i.postimg.cc/SQG85c7B/4.jpg" alt="Достижение 1" class="monkey-img">
+        <img src="https://i.postimg.cc/SQG85c7B/4.jpg" alt="Достижение 2" class="monkey-img">
+        <img src="https://i.postimg.cc/SQG85c7B/4.jpg" alt="Достижение 3" class="monkey-img">
+    </section>
+
+    <section id="contact">
+        <h1>Свяжитесь с Саней</h1>
+        
+        <div class="content-box" style="max-width: 500px;">
+            <p>Хотите пригласить Саню на:</p>
+            <ul>
+                <li>Лекцию о банановой экономике?</li>
+                <li>Соревнования по поеданию бананов?</li>
+                <li>Тренировку для обезьян?</li>
+            </ul>
+            
+            <!-- 🚨 ЗАМЕНИТЬ ССЫЛКУ НА БОТА -->
+            <a href="http://t.me/SanechkinKentik_bot" class="tg-button">📱 Написать в Telegram</a>
+            
+            <p style="margin-top: 30px; font-style: italic;">"Если вы не получили ответ сразу, значит, Саня в джунглях и у него плохой интернет."</p>
+        </div>
+    </section>
+
+    <script>
+        // Плавная прокрутка для якорей
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Изменение цвета навбара при прокрутке
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 107, 107, 0.9)';
+            } else {
+                navbar.style.background = '#ff6b6b';
+            }
+        });
+    </script>
+</body>
+</html>
